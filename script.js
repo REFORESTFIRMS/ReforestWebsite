@@ -1,10 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("header h1").addEventListener("click", function () {
-        this.textContent = "Reforest - Let's Go Green!";
-    });
-
-    document.querySelector(".contact a").addEventListener("click", function (event) {
-        event.preventDefault();
-        alert("You can email us at: rk@reforest.co.in");
-    });
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you for contacting us! We will get back to you soon.");
 });
+
